@@ -21,10 +21,25 @@ if errorlevel 1 (
 
 echo.
 echo Pushing to GitHub...
-git push
+git push -u origin main
+
+if errorlevel 1 (
+    echo.
+    echo ============================================
+    echo   PUSH FAILED - see the error above.
+    echo   Nothing went live. Copy this window's text
+    echo   and send it over so it can be diagnosed.
+    echo ============================================
+    echo.
+    pause
+    exit /b 1
+)
 
 echo.
-echo Done. GitHub Pages will update in a minute or two at:
-echo https://minhdang1511.github.io/cabohome/
+echo ============================================
+echo   SUCCESS - pushed to GitHub.
+echo   GitHub Pages will update in a minute or two at:
+echo   https://minhdang1511.github.io/cabohome/
+echo ============================================
 echo.
 pause
