@@ -1,1 +1,0 @@
-window._pc_settings = {"projectName":"Cabo","server":"","engine":"engine.74ebc.js","startScene":{"bundle":"","scene":"rQleC0mLpciEG9bHr1EJWA"},"targetName":"","bundles":{"main":{"config":"2b25e","script":"9e484"}},"debug":false,"antialias":false,"pauseAudioOnHidden":true};
